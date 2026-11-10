@@ -1,0 +1,124 @@
+/* Look of the Convyy landing (../Convyy Whiteboard/landing/Project/Css/components.css): white surface,
+   .btn-s buttons, .text-s text. No web fonts: nothing leaves the computer, so Golos Text / Inter
+   are used only when installed, otherwise the system font. */
+:root {
+  --font-display: "Golos Text", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-brand: #FFDC48;
+  --color-brand-strong: #F5C400;
+  --color-brand-secondary: #C8AEFF;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #EDEAE6;
+  --color-surface-hover: #EBE7E2;
+  --color-surface-cream: #FCFAF5;
+  --color-text: #000000;
+  --color-text-muted: rgba(0, 0, 0, 0.5);
+  --color-black-a08: rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  width: 340px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.16px;
+}
+
+main { display: flex; flex-direction: column; gap: 12px; padding: 16px; }
+
+header { display: flex; align-items: center; gap: 8px; }
+header img { border-radius: 6px; }
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 120%;
+  letter-spacing: -0.24px;
+}
+
+#status { margin: 0; color: var(--color-text-muted); }
+
+.progress { display: flex; align-items: center; gap: 8px; }
+.progress[hidden] { display: none; }
+.progress .track { flex: 1; height: 8px; overflow: hidden; border-radius: 999px; background: var(--color-surface-alt); }
+/* Moving stripes keep the bar alive while one long step (reading a big board) runs. */
+.progress .bar {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: repeating-linear-gradient(-45deg, var(--color-brand-strong) 0 8px, var(--color-brand) 8px 16px);
+  background-size: 22.6px 100%;
+  animation: progress-stripes 0.8s linear infinite;
+  transition: width 0.3s ease;
+}
+.progress .percent {
+  min-width: 3ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+@keyframes progress-stripes { to { background-position: 22.6px 0; } }
+@media (prefers-reduced-motion: reduce) { .progress .bar { animation: none; } }
+
+#report {
+  max-height: 300px;
+  overflow: auto;
+  overflow-wrap: anywhere;
+  padding: 12px;
+  border: 1px solid var(--color-black-a08);
+  border-radius: 12px;
+  background: var(--color-surface-cream);
+}
+#report p { margin: 0 0 8px; }
+#report p:last-of-type { margin-bottom: 0; }
+#report > * + details { margin-top: 8px; border-top: 1px solid var(--color-black-a08); padding-top: 8px; }
+#report summary { cursor: pointer; font-weight: 500; border-radius: 6px; }
+#report summary:focus-visible { outline: 2px solid var(--color-brand-secondary); outline-offset: 2px; }
+#report ul { margin: 6px 0 0; padding-inline-start: 18px; color: var(--color-text-muted); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.actions:empty { display: none; }
+
+/* .btn + .btn-s from the landing. */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 36px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  white-space: nowrap;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.15s;
+}
+button:not(:disabled):hover { transform: translateY(-2px); }
+button:focus-visible { outline: 2px solid var(--color-brand-secondary); outline-offset: 2px; }
+button:disabled { opacity: 0.5; cursor: default; }
+button[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { button:not(:disabled):hover { transform: none; } }
+
+/* .btn-primary: brand yellow, black text. */
+button.primary { flex: 1; background: var(--color-brand); }
+
+/* .btn-secondary on a white surface: the landing's neutral surface instead of white. */
+button.outline { background: var(--color-surface-alt); }
+button.outline:not(:disabled):hover { background: var(--color-surface-hover); }

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Экспортировать доску</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="icons/icon-32.png" width="24" height="24" alt="">
+      <h1>Convyy Fusion</h1>
+    </header>
+    <p id="status" role="status">Проверяю открытую вкладку…</p>
+    <div id="progress" class="progress" hidden>
+      <div class="track" role="progressbar" aria-label="Подготовка файлов" aria-valuemin="0" aria-valuemax="100"><div class="bar"></div></div>
+      <span class="percent"></span>
+    </div>
+    <section id="report" aria-label="Отчёт о переносе" hidden></section>
+    <div class="actions">
+      <button id="start" class="primary" disabled>Экспортировать доску</button>
+      <button id="save" class="primary" hidden></button>
+      <button id="cancel" class="outline" hidden>Отмена</button>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Convyy Fusion",
+  "description": "Перенеси доску из Miro или Holst в Convyy.",
+  "version": "0.1.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": [
+    "https://*.miro.com/*",
+    "https://app.holst.so/*"
+  ],
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "downloads",
+    "offscreen",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Экспортировать доску",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  }
+}

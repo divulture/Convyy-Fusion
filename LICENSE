@@ -1,0 +1,107 @@
+# Convyy Fusion — License / Лицензия
+
+The Russian version prevails. При расхождении действует русская версия.
+
+---
+
+## English
+
+**Convyy Fusion — Proprietary License**
+
+Copyright © 2026 Dmitriy Rostislavovich Ivanov ("the Rightsholder"). All rights reserved.
+
+1. **Software.** "Convyy Fusion" means the browser extension, its code, icons, documentation and all other files in
+   the `divulture/Convyy-Fusion` repository and its releases ("the Software"). The Software is licensed, not sold.
+
+2. **License.** The Rightsholder grants you a free of charge, non-exclusive, non-transferable, revocable license to
+   install and run unmodified copies of the Software in your own browser solely to move boards you have access to
+   into the Convyy service.
+
+3. **Restrictions.** Except as expressly allowed in section 2, you may not:
+   1. copy the Software, except for the installation and copies technically necessary to use it;
+   2. modify, adapt, translate or create derivative works of the Software or any part of it;
+   3. decompile, disassemble, deobfuscate, reverse engineer or otherwise attempt to obtain the structure or source of
+      the Software, except to the extent such activity is expressly permitted by applicable law notwithstanding this
+      restriction;
+   4. publish, distribute, sell, rent, lend, sublicense, host, mirror or otherwise make the Software or any part of it
+      available to third parties, including through browser extension stores;
+   5. remove or alter any copyright, license or other notices;
+   6. use the Software or any part of it to create a competing product or to move boards into services other than
+      Convyy;
+   7. use the Software in violation of applicable law or of the terms of the services you export boards from.
+
+   Viewing this repository on GitHub, and any copy GitHub itself creates through its features, is subject to the
+   GitHub Terms of Service and grants no rights beyond them.
+
+4. **Your boards.** You are responsible for having the right to export the boards you move with the Software. Miro,
+   Holst and other names are trademarks of their owners; the Software is not affiliated with or endorsed by them.
+
+5. **Third-party components.** The Software includes third-party components licensed under their own terms, listed
+   in `NOTICE`. Nothing in this License limits your rights under those terms.
+
+6. **Ownership.** All rights not expressly granted are reserved by the Rightsholder.
+
+7. **Termination.** This License ends automatically if you breach any of its terms. On termination you must stop
+   using the Software and delete all copies.
+
+8. **No warranty. Limitation of liability.** The Software is provided "as is", without warranty of any kind,
+   including that every object of a board will be transferred. To the maximum extent permitted by applicable law, the
+   Rightsholder is not liable for any damages arising from the use of or inability to use the Software, including
+   loss of data.
+
+9. **Governing law and disputes.** As set out in the Convyy Terms of Use.
+
+10. **Contact.** hello@dmivanov.ru
+
+---
+
+## Русский
+
+**Convyy Fusion — лицензия правообладателя**
+
+© 2026 Иванов Дмитрий Ростиславович («Правообладатель»). Все права защищены.
+
+1. **Программа.** «Convyy Fusion» — расширение браузера, его код, иконки, документация и все иные файлы репозитория
+   `divulture/Convyy-Fusion` и его релизов («Программа»). Программа предоставляется по лицензии, а не продаётся.
+
+2. **Лицензия.** Правообладатель предоставляет вам безвозмездную простую (неисключительную), непередаваемую,
+   отзывную лицензию на установку и запуск неизменённых экземпляров Программы в вашем браузере исключительно для
+   переноса досок, к которым у вас есть доступ, в сервис Convyy.
+
+3. **Ограничения.** Кроме прямо разрешённого в пункте 2, запрещается:
+   1. копировать Программу, за исключением установки и копий, технически необходимых для её использования;
+   2. изменять, адаптировать, переводить Программу или её части, создавать производные произведения;
+   3. декомпилировать, дизассемблировать, деобфусцировать, исследовать устройство Программы или иным образом пытаться
+      получить её структуру или исходный код, за исключением случаев, прямо разрешённых применимым законом
+      независимо от настоящего ограничения;
+   4. публиковать, распространять, продавать, сдавать в аренду, передавать во временное пользование,
+      сублицензировать, размещать, зеркалировать Программу или её части или иным образом предоставлять к ним доступ
+      третьим лицам, в том числе через магазины расширений браузеров;
+   5. удалять или изменять уведомления об авторских правах, лицензии и иные уведомления;
+   6. использовать Программу или её части для создания конкурирующего продукта или для переноса досок в сервисы,
+      отличные от Convyy;
+   7. использовать Программу с нарушением применимого законодательства или условий сервисов, из которых
+      переносятся доски.
+
+   Просмотр этого репозитория на GitHub и копии, создаваемые самим GitHub его функциями, регулируются Условиями
+   использования GitHub и не дают прав сверх них.
+
+4. **Ваши доски.** Вы отвечаете за то, что вправе выгружать доски, которые переносите с помощью Программы. Miro,
+   Holst и иные названия — товарные знаки их владельцев; Программа с ними не связана и ими не одобрена.
+
+5. **Сторонние компоненты.** Программа включает сторонние компоненты, распространяемые на собственных условиях,
+   перечисленных в файле `NOTICE`. Настоящая лицензия не ограничивает ваших прав по этим условиям.
+
+6. **Права.** Все права, прямо не предоставленные настоящей лицензией, сохраняются за Правообладателем.
+
+7. **Прекращение.** Лицензия прекращается автоматически при нарушении любого её условия. После прекращения вы
+   обязаны прекратить использование Программы и удалить все её экземпляры.
+
+8. **Отказ от гарантий. Ограничение ответственности.** Программа предоставляется «как есть», без каких-либо
+   гарантий, в том числе гарантии переноса каждого объекта доски. В максимальной степени, допускаемой применимым
+   законодательством, Правообладатель не несёт ответственности за убытки, возникшие в связи с использованием
+   Программы или невозможностью её использования, включая потерю данных.
+
+9. **Применимое право и споры.** В соответствии с Условиями использования Convyy.
+
+10. **Контакты.** hello@dmivanov.ru
